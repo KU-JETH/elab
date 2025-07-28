@@ -1,0 +1,16 @@
+i, z = map(int, input().split())
+
+persons = []
+time = 0
+
+for _ in range(i):
+  persons.append(int(input()))
+
+while z > 0:
+  time += 1
+  
+  for p in persons:
+    if time % p == 0:
+      z -= 1
+
+print(time)

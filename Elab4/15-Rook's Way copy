@@ -1,0 +1,15 @@
+row = int(input("Enter Rook's row position: "))
+col = int(input("Enter Rook's column position: "))
+
+board_row = "|" + " |" * col + "x|" + " |" * (8-1-col)
+rook_row = "|" + "x|" * col + "R|" + "x|" * (8-1-col)
+
+print('-----------------')
+
+for i in range(8):
+  if i == row:
+    print(rook_row)
+  else:
+    print(board_row)
+  
+  print('-----------------')
